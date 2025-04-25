@@ -71,3 +71,16 @@ imgs.forEach((img) => {
   img.addEventListener('click', imgSrc);
 });
 ```
+
+### KEYBOARD 
+Você pode adicionar atalhos para facilitar a navegação no seu site, através de eventos do **keyboard**.
+```
+function handleKeyboard(event) {
+  if(event.key === 'a')
+    document.body.classList.toggle('azul');
+  else if(event.key === 'v')
+    document.body.classList.toggle('vermelho');
+}
+
+window.addEventListener('keydown', handleKeyboard);
+```

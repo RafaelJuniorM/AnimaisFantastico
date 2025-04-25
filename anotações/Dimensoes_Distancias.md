@@ -1,8 +1,8 @@
-#Height e Width
+### Height e Width
 
 Estas são propriedades e métodos dos objetos Element e HTMLElement, a maioria delas são Read Only.
 
-```
+```bash
 const section = document.querySelector('.animais');
 
 section.clientHeight; // height + padding
@@ -13,9 +13,9 @@ section.scrollHeight; // height total, mesmo dentro de scroll
 
 > Mesma coisa para o Width, clientWidth ...
 
-#offsetTop e offsetLeft
+### offsetTop e offsetLeft
 
-```
+```bash
 const section = document.querySelector('.animais');
 
 // Distância entre o topo do elemento e o topo da página
@@ -27,11 +27,11 @@ section.offsetLeft;
 
 ```
 
-#getBoundingClientRect()
+### getBoundingClientRect()
 
 Método que retorna um objeto com valores de width, height, distâncias do elemento e mais.
 
-```
+```bash
 const section = document.querySelector('.animais');
 
 const rect = section.getBoundingClientRect();
@@ -41,9 +41,9 @@ rect.top; // distância entre o topo do elemento e o scroll
 
 ```
 
-#Window
+### Window
 
-```
+```bash
 window.innerWidth; // width do janela
 window.outerWidth; // soma dev tools também
 window.innerHeight; // height do janela
@@ -58,10 +58,10 @@ if(window.innerWidth < 600) {
 
 ```
 
-#matchMedia()
+### matchMedia()
 Utilize um media-querie como no CSS para verificar a largura do browser.
 
-```
+```bash
 const small = window.matchMedia('(max-width: 600px)');
 
 if(small.matches) {
@@ -72,7 +72,7 @@ if(small.matches) {
 
 ```
 
-####Dica 
+#### Dica 
 - Selecione o elemento no inspetor (dom);
 - Abra o console e digite $0 para selecionar o mesmo;
 - Os elementos selecionados anteriormente são $1, $2 ...

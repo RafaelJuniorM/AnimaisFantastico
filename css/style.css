@@ -5,6 +5,10 @@
     -webkit-font-smoothing: antialiased; /*deixa a fonte mais suave*/
 }
 
+.textoMaior{
+    font-size: 150%;
+}
+
 img {   /* deixa a img responsiva */
     display: block;
     max-width: 100%;

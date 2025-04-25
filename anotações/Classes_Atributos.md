@@ -1,8 +1,8 @@
-#ClassList
+### ClassList
 
 Retorna uma lista com as classes do elemento. Permite adicionar, remover e verificar se contém.
 
-```
+```bash
 const menu = document.querySelector('.menu');
 
 menu.className; // string
@@ -16,11 +16,11 @@ menu.classList.replace('ativo', 'inativo');
 
 ```
 
-#Atributes
+### Atributes
 
 Retorna uma array-like com os atributos do elemento.
 
-```
+```bash
 const animais = document.querySelector('.animais');
 
 animais.attributes; // retorna todos os atributos
@@ -28,11 +28,11 @@ animais.attributes[0]; // retorna o primeiro atributo
 
 ```
 
-###getAttribute e setAttribute
+### getAttribute e setAttribute
 
 Métodos que **retornam** ou **definem** de acordo com o atributo selecionado.
 
-```
+```bash
 const img = document.querySelector('img');
 
 img.getAttribute('src'); // valor do src
