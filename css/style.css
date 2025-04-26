@@ -100,6 +100,10 @@ body{
     grid-column: 2; /* define onde estara no grid */
 }
 
+.animais-lista li {
+    cursor: pointer;
+}
+
 /* estilizando o scrool - NAO sao todos navegadores que aceitam */
 .animais-lista::-webkit-scrollbar {
     width: 18px;
@@ -132,6 +136,7 @@ body{
     margin-top: 2rem;
     margin-bottom: .5rem;
     color: #e54;
+    cursor: pointer;
 }
 
 .faq-lista dt::before {
@@ -217,3 +222,55 @@ body{
 
 }
 
+/* navegação por tab */
+.js .js-tabcontent section {
+    display: none;
+}
+
+.js-tabcontent section.ativo {
+    display: block !important;
+    animation: showtab .4s forwards;
+}
+
+@keyframes showtab {
+    from {
+        opacity:0;
+        transform: translate3d(-30px, 0,0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+/*according list FAQ */
+
+.js .js-accordion dd {
+    display: none;
+}
+
+.js .js-accordion dd.ativo {
+    display: block;
+    animation: slideDownAccordion .4s forwards;
+}
+
+.js-accordion dt::after {
+    content: ' ⬎';
+    margin-left: 10px;
+}
+
+.js-accordion dt.ativo::after {
+    content: ' ⬏';
+    margin-left: 10px;
+}
+
+@keyframes slideDownAccordion {
+    from {
+        opacity: 0;
+        max-height: 0;
+    }
+    to {
+        opacity: 1;
+        max-height: 200px;
+    }
+}
