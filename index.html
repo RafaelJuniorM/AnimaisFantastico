@@ -6,6 +6,10 @@
     <title>Animais Fantasticos</title>
 
     <link rel="stylesheet" href="./css/style.css">
+
+    <script>
+        document.documentElement.className += ' js';
+    </script>
 </head>
 <body>
     <nav class="menu">
@@ -20,28 +24,21 @@
     <section class="grid-section animais" id="animais">
         <h1 class="titulo">Animais Fantásticos</h1>
 
-        <ul class="animais-lista">
+        <ul class="animais-lista js-tabmenu">
             <li><img src="img/imagem1.jpg" alt=""></li>
-            <li><img src="img/image2.jpg" alt=""></li>
+            <li><img src="img/imagem2.jpg" alt=""></li>
             <li><img src="img/imagem3.jpg" alt=""></li>
             <li><img src="img/imagem4.jpg" alt=""></li>
             <li><img src="img/imagem5.jpg" alt=""></li>
             <li><img src="img/imagem6.jpg" alt=""></li>
         </ul>
 
-        <div class="animais-descrição">
-            <section>
-                <h2>Raposa</h2>
-                <p>Raposas são pequenos a médios mamíferos onívoros pertencentes a vários gêneros da família Canidae. As raposas têm o crânio achatado, orelhas triangulares verticais, focinho pontiagudo e ligeiramente arrebitado e uma cauda longa e espessa.</p>
-                <p>As raposas vivem em todos os continentes, exceto a Antártida. De longe, a espécie mais comum e difundida de raposa é a raposa vermelha (Vulpes vulpes) com cerca de 47 subespécies reconhecidas.</p>
-                <p>A caça à raposa com matilhas de cães, há muito uma atividade estabelecida na Europa, especialmente nas Ilhas Britânicas, foi exportada por colonos europeus para várias partes do Novo Mundo.</p>
-            </section>
+        <div class="animais-descrição js-tabcontent">
 
             <section>
                 <h2>Raposa</h2>
                 <p>Raposas são pequenos a médios mamíferos onívoros pertencentes a vários gêneros da família Canidae. As raposas têm o crânio achatado, orelhas triangulares verticais, focinho pontiagudo e ligeiramente arrebitado e uma cauda longa e espessa.</p>
                 <p>As raposas vivem em todos os continentes, exceto a Antártida. De longe, a espécie mais comum e difundida de raposa é a raposa vermelha (Vulpes vulpes) com cerca de 47 subespécies reconhecidas.</p>
-                <p>A caça à raposa com matilhas de cães, há muito uma atividade estabelecida na Europa, especialmente nas Ilhas Britânicas, foi exportada por colonos europeus para várias partes do Novo Mundo.</p>
             </section>
 
             <section>
@@ -55,6 +52,8 @@
                 <h2>Urso</h2>
                 <p>Raposas são pequenos a médios mamíferos onívoros pertencentes a vários gêneros da família Canidae. As raposas têm o crânio achatado, orelhas triangulares verticais, focinho pontiagudo e ligeiramente arrebitado e uma cauda longa e espessa.</p>
                 <p>As raposas vivem em todos os continentes, exceto a Antártida. De longe, a espécie mais comum e difundida de raposa é a raposa vermelha (Vulpes vulpes) com cerca de 47 subespécies reconhecidas.</p>
+                <p>A caça à raposa com matilhas de cães, há muito uma atividade estabelecida na Europa, especialmente nas Ilhas Britânicas, foi exportada por colonos europeus para várias partes do Novo Mundo.</p>
+
                 <p>A caça à raposa com matilhas de cães, há muito uma atividade estabelecida na Europa, especialmente nas Ilhas Britânicas, foi exportada por colonos europeus para várias partes do Novo Mundo.</p>
             </section>
 
@@ -84,7 +83,7 @@
 
     <section class="grid-section faq " id="faq">
         <h1 class="titulo">Faq</h1>
-        <dl class="faq-lista">
+        <dl class="faq-lista js-accordion">
             <dt>Qual idade dos animais ?</dt>
             <dd>Raposas são pequenos a médios mamíferos onívoros pertencentes a vários gêneros da família Canidae.</dd>
 
